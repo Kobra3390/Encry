@@ -35,7 +35,7 @@ def Decrypt_file():
    # using the key
    fernet = Fernet(key)
    # openening the encrypted file
-   file_name = str(input("Enter a file name to encrypt: "))
+   file_name = str(input("Enter a file name to decrypt: "))
    with open(file_name, 'rb') as enc_file:
       encrypted = enc_file.read()
    # decrypting the file
@@ -66,3 +66,5 @@ def Encrypt_Folder():
       if files.is_file():
          with open(files, 'wb') as encrypted_file:
             encrypted_file.write(encrypted)
+
+
