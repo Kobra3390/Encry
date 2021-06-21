@@ -21,6 +21,7 @@ console.print("""[yellow]
 console.print("[blue]1 - Generate the Key")
 console.print("[blue]2 - Ecrypt the File")
 console.print("[blue]3 - Decrypt the File")
+console.print("[blue]4 - Ecrypt the Folder")
 print("\n")
 
 options = int(input("Enter an options --> "))
@@ -31,3 +32,5 @@ if(options == 2):
   Encrypt_File()
 if(options == 3):
   Decrypt_file()
+if(options == 4):
+  Encrypt_Folder()

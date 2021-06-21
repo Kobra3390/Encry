@@ -1,4 +1,5 @@
 from cryptography.fernet import Fernet
+import os
 
 def Generated_key():
    # key generation
@@ -20,8 +21,8 @@ def Encrypt_File():
       original = file.read()
    # emcrypting the file
    encrypted = fernet.encrypt(original)
-   # openint the file in write mode and 
-   # writing the encryèted data
+   # opening the file in write mode and 
+   # writing the encrypted data
    with open(file_name, 'wb') as encrypted_file:
       encrypted_file.write(encrypted)
 
@@ -44,3 +45,24 @@ def Decrypt_file():
    with open(file_name,'wb') as dec_file:
       dec_file.write(decrypted)
 
+# encrypt the folder
+def Encrypt_Folder():
+   # opening the key
+   with open('filekey.key', 'rb') as filekey:
+      key = filekey.read()
+   # using the generated key
+   fernet = Fernet(key)
+   # opening the original folder to encrypt
+   folder_name = str(input("Enter the folder name to encrypt: "))
+   for files in os.scandir(folder_name):
+      if files.is_file():
+         with open(files, 'rb') as file:
+            original = file.read()
+   # emcrypting the file
+   encrypted = fernet.encrypt(original)
+   # opening the file in write mode and 
+   # writing the encrypted data
+   for files in os.scandir(folder_name):
+      if files.is_file():
+         with open(files, 'wb') as encrypted_file:
+            encrypted_file.write(encrypted)
