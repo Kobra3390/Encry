@@ -19,7 +19,7 @@ def Encrypt_File():
    file_name = str(input("Enter a file name to encrypt: "))
    with open(file_name, 'rb') as file:
       original = file.read()
-   # emcrypting the file
+   # encrypting the file
    encrypted = fernet.encrypt(original)
    # opening the file in write mode and 
    # writing the encrypted data
@@ -34,7 +34,7 @@ def Decrypt_file():
       key = filekey.read()
    # using the key
    fernet = Fernet(key)
-   # openening the encrypted file
+   # opening the encrypted file
    file_name = str(input("Enter a file name to decrypt: "))
    with open(file_name, 'rb') as enc_file:
       encrypted = enc_file.read()
@@ -58,7 +58,7 @@ def Encrypt_Folder():
       if files.is_file():
          with open(files, 'rb') as file:
             original = file.read()
-   # emcrypting the file
+   # encrypting the file
    encrypted = fernet.encrypt(original)
    # opening the file in write mode and 
    # writing the encrypted data

@@ -19,9 +19,9 @@ console.print("""[yellow]
 """)
 
 console.print("[blue]1 - Generate the Key")
-console.print("[blue]2 - Ecrypt the File")
+console.print("[blue]2 - Encrypt the File")
 console.print("[blue]3 - Decrypt the File")
-console.print("[blue]4 - Ecrypt the Folder")
+console.print("[blue]4 - Encrypt the Folder")
 
 print("\n")
 
