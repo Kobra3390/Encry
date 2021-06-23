@@ -79,13 +79,10 @@ def Decrypt_Folder():
       if files.is_file():
          with open(files, 'rb') as enc_file:
             encrypted = enc_file.read()
-   # decrypting the file
-   decrypted = fernet.decrypt(encrypted)
-   # opening the file in write mode and
-   # writing the decrypted data
-   for files in os.scandir(folder_name):
-      if files.is_file():
+         # decrypting the file
+         decrypted = fernet.decrypt(encrypted)
          with open(files,'wb') as dec_file:
-            dec_file.write(decrypted)
+            dec_file.write(decrypted) 
+
    
 
