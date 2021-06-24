@@ -67,4 +67,3 @@ def Encrypt_Folder():
          with open(files, 'wb') as encrypted_file:
             encrypted_file.write(encrypted)
 
-
