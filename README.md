@@ -69,3 +69,23 @@ Or in alternative:
 $ python3 Encry.py
 ```
 
+---
+# CARATTERISTICHE (IT)
+
+1. *Generate the Key*: Permette la generazione di una chiave per cryptare e decryptare il file o la cartella, questa operazione va fatta prima di tutto 
+2. *Encrypt the File*: Una volta generata la chiave e dando in input il nome del file questa funzione lo cryptera (il file dovrà trovarsi nella stessa cartella dello script)
+3.  *Decrypt the File*: Dando in input il nome del file questa funzione lo decryptera (il file dovrà trovarsi nella stessa cartella dello script)
+4. *Encrypt the Folder*: Una volta generata la chiave e dando in input il nome della cartella questa funzione cryptera tutti i file della cartella con la chiave generata in precedenza (la cartella dovrà trovarsi nella stessa cartella dello script)
+5. *Decrypt the Folder*:  Dando in input il nome della cartella questa funzione decryptera tutti i file in essa contenuti (la cartella dovrà trovarsi nella stessa cartella dello script)
+
+---
+
+# FEATURES (EN)
+
+*Remember*: to crypt/decrypt a file/folder, the latter must be in the same folder as the script itself. 
+
+1. *Generate the Key*: Generates the key to encrypt and decrypt the file/folder, this operation must be done before anything else
+2. *Encrypt the File*: After generating the key adn giving in input the file's name, this operation will encrypt it
+3. *Decrypt the File*: After generating the key and giving in input the file's name, this operation will decrypt it
+4. *Encrypt the Folder*: After generating the key and giving in input the folder's name, this operation will encrypt all the files in the folder with the same key
+5. *Decrypt the Folder*: After generating the key and giving in input the folder's name, this operation will decrypt all the files in the folder
