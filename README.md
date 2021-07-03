@@ -44,7 +44,7 @@ The documentation for the cryptography module can be found at the following link
 Per Windows e linux:
 
 ```
-$ https://github.com/Kobra3390/Encry.git
+$ git clone https://github.com/Kobra3390/Encry.git
 $ cd Encry
 $ python Encry.py
 ```
@@ -60,7 +60,7 @@ $ python3 Encry.py
 For Windows and Linux:
 
 ```
-$ https://github.com/Kobra3390/Encry.git
+$ git clone https://github.com/Kobra3390/Encry.git
 $ cd Encry
 $ python Encry.py
 ```
